@@ -30,7 +30,8 @@ namespace RegistroDeSemiJoias.Data.Mappings
                 .HasMaxLength(250);
 
             builder.Property(x => x.Estoque)
-                .IsRequired();
+                .IsRequired()
+                .HasColumnType("decimal(18)");
 
             builder.Property(x => x.Categoria)
                 .IsRequired()
